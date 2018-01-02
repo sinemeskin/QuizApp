@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quizapp.MainActivity"
+    android:background="@color/colorPrimaryLight">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/activity_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_margin"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/name_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="textCapWords"
+            android:textSize="@dimen/text_explanation" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Let's learn French! Are you ready to practice new words?"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/text_explanation" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 1: C'est..."
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/text_regular"
+            android:background="@color/colorPrimaryLight"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/tree"
+            android:layout_width="@dimen/image_size"
+            android:layout_height="@dimen/image_size"
+            android:src="@drawable/tree" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/right1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="un arbre"
+                android:textSize="@dimen/text_choices" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="un crayon"
+                android:textSize="@dimen/text_choices" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="une maisson"
+                android:textSize="@dimen/text_choices" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 2: C'est..."
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/text_regular"
+            android:background="@color/colorPrimaryLight"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/dress"
+            android:layout_width="@dimen/image_size"
+            android:layout_height="@dimen/image_size"
+            android:src="@drawable/dress" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="un stylo"
+                android:textSize="@dimen/text_choices"/>
+
+            <RadioButton
+                android:id="@+id/right2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="une robe"
+                android:textSize="@dimen/text_choices"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="une femme"
+                android:textSize="@dimen/text_choices"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 3: Le couleur de la chemise est ... "
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/text_regular"
+            android:background="@color/colorPrimaryLight"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/shirt"
+            android:layout_width="@dimen/image_size"
+            android:layout_height="@dimen/image_size"
+            android:src="@drawable/shirt" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="rose"
+                android:textSize="@dimen/text_choices"/>
+
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="noire"
+                android:textSize="@dimen/text_choices"/>
+
+            <RadioButton
+                android:id="@+id/right3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bleue"
+                android:textSize="@dimen/text_choices"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 4: C'est ... "
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/text_regular"
+            android:background="@color/colorPrimaryLight"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/chair"
+            android:layout_width="@dimen/image_size"
+            android:layout_height="@dimen/image_size"
+            android:src="@drawable/chair" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="un homme"
+                android:textSize="@dimen/text_choices"/>
+
+            <RadioButton
+                android:id="@+id/right4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="une chaise"
+                android:textSize="@dimen/text_choices"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="un lit"
+                android:textSize="@dimen/text_choices"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/text_explanation"
+            android:text="Now let's practice grammer. Check possible answers to fill the blanks. There may be more than one answer for each question."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 5: .... les hommes"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/text_regular"
+            android:background="@color/colorPrimaryLight"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/right5a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ils sont"
+            android:textSize="@dimen/text_choices" />
+
+        <CheckBox
+            android:id="@+id/wrong5a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Je suis"
+            android:textSize="@dimen/text_choices" />
+
+        <CheckBox
+            android:id="@+id/right5b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nous sommes"
+            android:textSize="@dimen/text_choices" />
+
+        <CheckBox
+            android:id="@+id/wrong5b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elle est"
+            android:textSize="@dimen/text_choices" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 6: C'est une ...."
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/text_regular"
+            android:background="@color/colorPrimaryLight"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/wrong6a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="magasin"
+            android:textSize="@dimen/text_choices" />
+
+        <CheckBox
+            android:id="@+id/wrong6b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vélo"
+            android:textSize="@dimen/text_choices" />
+
+        <CheckBox
+            android:id="@+id/right6a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="femme"
+            android:textSize="@dimen/text_choices" />
+
+        <CheckBox
+            android:id="@+id/right6b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="porte"
+            android:textSize="@dimen/text_choices" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="@dimen/text_regular"
+                android:onClick="submitAnswers"
+                android:text="Submıt" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="@dimen/text_regular"
+                android:onClick="checkAnswers"
+                android:text="Check Answers" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/summary_view"
+            android:textSize="@dimen/text_regular"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
